@@ -22,7 +22,7 @@ function setup() {
 
 function drawCircle(c, r){
   fill(c);
-  ellipse(cx, cy, r, r);
+  ellipse(width/2, height/2, r);
 }
 
 function drawArcs(c1, c2, r) {
@@ -30,6 +30,6 @@ function drawArcs(c1, c2, r) {
     let start = TWO_PI / 20 * i;
     let stop = TWO_PI / 20 * (i + 1);
     fill(i % 2 == 0 ? c1 : c2);
-    arc(cx, cy, r, r, start, stop, PIE);
+    arc(width/2, height/2, r, r, start, stop, PIE);
   }
 }
