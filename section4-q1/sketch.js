@@ -10,20 +10,29 @@ function setup(){
     scores[i] = random(60, 100); // 60以上100未満のランダムな数を代入
   }
 
+
   // 横線を引く
   const n = 10;
   for(let i = 0; i < n; i++){ line(0, height * i / n, width, height * i / n); }
 
   // ここからが本番
-  function  i(arr){
   fill(0);
   const dx = width / scores.length;
   let px, py; // 線を引くために一つ前の点を覚えておく変数
   beginShape();
-  for(let i = 0; i < scores.length; i++){vertex(px,py)
+  for(let i = 0; i < scores.length; i++){
     // BLANK[1]
+  const h=height*scores[i]/100
+  const x=i*dx+dx/2
+  const y=height-h
 
+  if(i>0){
+    line(px,py,x,y)
   }
+  px=x
+  py=y
+
+  ellipse(x,y,5,5)
+} 
   endShape(CLOSE)
-}
 }
