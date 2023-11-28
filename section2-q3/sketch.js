@@ -22,7 +22,7 @@ function setup() {
 
 function drawCircle(c, r){
   fill(c);
-  ellipse(cx, cy, r, r);
+  ellipse(cx, cy, r);
 }
 
 function drawArcs(c1, c2, r) {

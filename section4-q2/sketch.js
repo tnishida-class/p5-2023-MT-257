@@ -13,6 +13,7 @@ function setup(){
   // 円グラフを描くには割合が必要なので合計を計算しておく
   let total = 0;
   for(let i = 0; i < scores.length; i++){ total += scores[i]; }
+  
 
   // BLANK[1]
 }
